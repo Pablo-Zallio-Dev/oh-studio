@@ -1,0 +1,282 @@
+/*------------------------------------*\
+  #CUSTOM-PROPERTIES
+\*------------------------------------*/
+
+:root {
+  /* Font */
+  --font-primary: "PP Neue Montreal", sans-serif;
+
+  /* Colors */
+
+  --color-white: #fff;
+  --color-black: #000;
+  --color-black-transparent: #0000005b;
+  --color-grey: #7f7f7f;
+  --color-grey-light: #e8e5e480;
+  --color-grey-light-dark: #b7b7b7b9;
+
+  /* Size */
+  --fz-14: 0.875rem;
+  --fz-36: 2.25rem;
+}
+
+/*------------------------------------*\
+      #RESET
+    \*------------------------------------*/
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: var(--font-primary);
+  scroll-behavior: smooth;
+}
+
+img,
+video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+/*------------------------------------*\
+      #COMPONENTS
+    \*------------------------------------*/
+
+/* --------------------------------------- HEADER - NAV (CENTER) ------------------------------------ */
+
+header {
+  width: 100%;
+  padding: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+}
+
+nav {
+  background-color: var(--color-grey-light);
+  backdrop-filter: blur(16px);
+  border-radius: 6.25rem;
+  width: 17.5rem;
+  padding: 0.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 20px;
+}
+
+.nav__link {
+  font-size: var(--fz-14);
+  width: 5.5rem;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+.nav__link--active {
+  background-color: var(--color-white);
+  border-radius: 6.25rem;
+}
+
+@media (768px < width) {
+  header {
+    padding: 1rem 2.5rem;
+  }
+  nav {
+    width: 18.75rem;
+    margin: 1rem 0;
+  }
+}
+
+/*------------------------------------*\
+    #UTILITIES
+    \*------------------------------------*/
+/***************\
+    #Mobile - 320px - XS
+    \***************/
+
+.container__contact {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-end;
+  gap: 0.25rem;
+  margin-bottom: 3rem;
+}
+
+.footer__copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-size: var(--fz-14);
+}
+
+.footer__copyright img {
+  width: 30px;
+}
+
+.footer__copyright p::before {
+  content: url("../assets/images/copyright-regular.svg");
+  display: inline-block;
+  width: 0.7rem;
+  margin: 0.2rem;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer__social a {
+  text-decoration: none;
+  color: var(--color-black);
+  font-size: var(--fz-14);
+}
+
+.paragraph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 2;
+}
+
+.paragraph p {
+  font-size: var(--fz-36);
+  font-weight: 500;
+  text-align: center;
+}
+
+.paragraph p span a {
+  color: var(--color-grey);
+  text-decoration: none;
+}
+/****************\
+    #Tablet - 640px - S
+    \****************/
+
+@media (640px < width) {
+}
+
+/******************\
+    #Tablet L - 768px - M
+    \******************/
+
+@media (768px < width) {
+
+  .footer__social a:hover {
+    color: var(--color-grey-light-dark);
+  }
+    .paragraph p {
+        font-size: 3rem;
+      }
+}
+
+/******************\
+    #Desktop - 1024px - L
+    \******************/
+
+@media (1024px < width) {
+  .footer {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 0.25rem;
+    margin-bottom: 3rem;
+  }
+
+  .footer__copyright {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    font-size: var(--fz-14);
+  }
+
+  .paragraph p span a:hover {
+    color: var(--color-grey-light-dark);
+  }
+}
+
+/*********************\
+    #Desktop XL - 1280px - XL
+    \*********************/
+
+@media (1280px < width) {
+    .paragraph p {
+        font-size: 4.5rem;
+      }
+}
+
+/*************\
+    #4K - 1536px - XXL
+    \*************/
+
+@media (1600px < width) {
+}
+
+/*------------------------------------*\
+    #SITE-STYLES
+    \*------------------------------------*/
+
+/***************\
+    #Mobile - 320px - XS
+    \***************/
+
+/****************\
+    #Tablet - 640px - S
+    \****************/
+
+@media (640px < width) {
+}
+
+/******************\
+    #Tablet L - 768px - M
+    \******************/
+
+@media (767px < width) {
+}
+
+/******************\
+    #Desktop - 1024px - L
+    \******************/
+
+@media (1024px < width) {
+}
+
+/*********************\
+    #Desktop XL - 1280px - XL
+    \*********************/
+
+@media (1279px < width) {
+}
+
+/*************\
+    #4K - 1536px - XXL
+    \*************/
+
+@media (1600px < width) {
+}
