@@ -59,11 +59,11 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  z-index: 999;
 }
 
 nav {
+  position: fixed;
+  z-index: 999;
   background-color: var(--color-grey-light);
   backdrop-filter: blur(16px);
   border-radius: 6.25rem;
