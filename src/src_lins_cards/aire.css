@@ -1,0 +1,144 @@
+/*------------------------------------*\
+  #CUSTOM-PROPERTIES
+\*------------------------------------*/
+
+:root {
+    /* Font */
+    --font-primary: "PP Neue Montreal", sans-serif;
+  
+    /* Colors */
+  
+    --color-white: #fff;
+    --color-black: #000;
+    --color-black-transparent: #0000005b;
+    --color-grey: #7f7f7f;
+    --color-grey-light: #e8e5e480;
+    --color-grey-light-dark: #b7b7b7b9;
+  
+  
+    /* Size */
+    --fz-14: 0.875rem;
+    --fz-36: 2.25rem;
+  }
+  
+  /*------------------------------------*\
+      #RESET
+    \*------------------------------------*/
+  
+  html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: var(--font-primary);
+    scroll-behavior: smooth;
+  }
+  
+  img,
+  video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  *,
+  *::after,
+  *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+  }
+  
+  /*------------------------------------*\
+      #COMPONENTS
+    \*------------------------------------*/
+  
+  /* --------------------------------------- HEADER - NAV (CENTER) ------------------------------------ */
+  
+  
+  /*------------------------------------*\
+    #UTILITIES
+    \*------------------------------------*/
+/***************\
+    #Mobile - 320px - XS
+\***************/
+  
+  /****************\
+    #Tablet - 640px - S
+    \****************/
+  
+  @media (640px < width) {
+  }
+  
+/******************\
+    #Tablet L - 768px - M
+\******************/
+  
+  @media (768px < width) {
+  }
+  
+/******************\
+    #Desktop - 1024px - L
+\******************/
+  
+  @media (1024px < width) {
+  }
+  
+/*********************\
+    #Desktop XL - 1280px - XL
+\*********************/
+  
+  @media (1280px < width) {
+  }
+  
+/*************\
+    #4K - 1536px - XXL
+\*************/
+  
+  @media (1600px < width) {
+  }
+  
+/*------------------------------------*\
+    #SITE-STYLES
+\*------------------------------------*/
+  
+/***************\
+    #Mobile - 320px - XS
+\***************/
+  
+  /****************\
+    #Tablet - 640px - S
+    \****************/
+  
+  @media (640px < width) {
+  }
+  
+/******************\
+    #Tablet L - 768px - M
+\******************/
+  
+  @media (767px < width) {
+
+  }
+  
+/******************\
+    #Desktop - 1024px - L
+\******************/
+  
+  @media (1024px < width) {
+  }
+  
+/*********************\
+    #Desktop XL - 1280px - XL
+\*********************/
+  
+  @media (1279px < width) {
+  
+  }
+  
+/*************\
+    #4K - 1536px - XXL
+\*************/
+  
+  @media (1600px < width) {
+  }
+  
