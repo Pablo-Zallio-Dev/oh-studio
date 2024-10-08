@@ -4,9 +4,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- <script src="../scrollreveal.js"></script> -->
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/logo-white.svg" />
   <link href="https://fonts.cdnfonts.com/css/pp-neue-montreal" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <link rel="stylesheet" href="profile.css" />
   <title>OH.STUDIO</title>
 </head>
@@ -23,30 +24,30 @@
   </header>
   <main>
 
-    <h1 class="profile__title">Hey 👋🏼 I'm Oli </h1>
+    <h1  class="profile__title" data-aos="fade-up">Hey 👋🏼 I'm Oli </h1>
 
     <!-- IMAGE-PROFILE -->
 
-    <section class="images__profile">
-      <img class="images__profiles__img" src="../assets/images/image-profile.png" alt="">
-      <img class="images__profiles__img images__profiles__img--tablet" src="../assets/images/image-profile2.png" alt="">
+    <section class="images__profile ">
+      <img class="images__profiles__img" src="../assets/images/image-profile.png" alt="" data-aos="fade-up" data-aos-delay="300">
+      <img class="images__profiles__img images__profiles__img--tablet" src="../assets/images/image-profile2.png" alt="" data-aos="fade-up" data-aos-delay="500">
     </section>
 
 
     <!-- SECTION-ABOUT -->
     <section class="about__section">
-      <h2 class="text__items items--reveal">About</h2>
-      <p class="about__text text--reveal">A freelance designer based in the UK. I combine my experience in product and brand to solve
+      <h2 class="text__items" data-aos="fade-up">About</h2>
+      <p class="about__text" data-aos="fade-up" data-aos-delay="300">A freelance designer based in the UK. I combine my experience in product and brand to solve
         problems, tell stories, and create compelling experiences.</p>
     </section>
 
     <!-- SECTION-EXPERIENCE -->
     <section class="experience__section">
-      <h2 class="text__items items--reveal">Experience</h2>
-      <p class="experience__text text--reveal">Where l've worked</p>
+      <h2 class="text__items" data-aos="fade-up">Experience</h2>
+      <p class="experience__text" data-aos="fade-up" data-aos-delay="300">Where l've worked</p>
     </section>
 
-    <section class="experience__items items--reveal">
+    <section class="experience__items" data-aos="fade-up">
 
       <article class="experience__items__item">
         <p>2023 - Present</p>
@@ -142,11 +143,11 @@
     <!-- SECTION-CLIENTS -->
 
     <section class="clients__section">
-      <h2 class="text__items items--reveal">Clients</h2>
-      <p class="clients__text text--reveal">Who I've worked with</p>
+      <h2 class="text__items" data-aos="fade-up">Clients</h2>
+      <p class="clients__text" data-aos="fade-up" data-aos-delay="300">Who I've worked with</p>
     </section>
 
-    <section class="grid__items items--reveal">
+    <section class="grid__items" data-aos="fade-up" data-aos-delay="300">
       <img src="../assets/images/logos-images/dailydev.svg" alt="" class="grid__items__item">
       <img src="../assets/images/logos-images/edgedb.svg" alt="" class="grid__items__item">
       <img src="../assets/images/logos-images/edgio.svg" alt="" class="grid__items__item">
@@ -164,8 +165,8 @@
     <!-- SECTION PARAGRAPH -->
 
     <section class="paragraph">
-      <p>Let's work together.<br>
-        <span><a href='mailto:#@gmail.com'>Get in touch.</a></span>
+      <p data-aos="fade-up">Let's work together.<br>
+        <span><a href='mailto:#@gmail.com' data-aos="fade-up">Get in touch.</a></span>
       </p>
     </section>
 
@@ -183,7 +184,12 @@
     </footer>
 
   </main>
-  <!-- <script src="profile.js"></script> -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({
+    duration: 1000,
+    once: true,
+  });</script>
+  <script src="profile.js"></script>
 </body>
 
 </html>

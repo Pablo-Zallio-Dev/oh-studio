@@ -108,7 +108,6 @@ nav {
       #Mobile - 320px - XS
 \***************/
 
-
 /* GRID LOGOS */
 
 .grid__items {
@@ -125,9 +124,6 @@ nav {
 .grid__items__item {
   width: 60%;
 }
-
-
-
 
 /****************\
       #Tablet - 640px - S
@@ -184,6 +180,28 @@ nav {
 /***************\
       #Mobile - 320px - XS
 \***************/
+
+@keyframes animate__item {
+  from {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.animation__items--animate {
+  animation-name: animate__item;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.animation__items {
+  opacity: 0;
+}
 
 /* ABOUT */
 
@@ -258,7 +276,6 @@ nav {
 
 /* SECTION-PARAGRAPH */
 
-
 .paragraph {
   margin: 8rem 0;
 }
@@ -269,11 +286,10 @@ nav {
   text-align: center;
 }
 
-.paragraph p span a{
+.paragraph p span a {
   color: var(--color-grey);
   text-decoration: none;
-  transition: color .3s ease;
-
+  transition: color 0.3s ease;
 }
 
 /* FOOTER */
@@ -414,14 +430,12 @@ footer {
     object-fit: cover;
   }
 
-  
   .paragraph p {
     font-size: 2.37rem;
     font-weight: 500;
     text-align: center;
   }
 
-  
   .paragraph p span a:hover {
     color: var(--color-grey-light-dark);
   }
