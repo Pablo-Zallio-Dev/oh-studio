@@ -25,3 +25,4 @@ const observer = new IntersectionObserver(animationParagraph, {
 
 observer.observe($paragraphText)
 observer.observe($paragraphContact)
+
