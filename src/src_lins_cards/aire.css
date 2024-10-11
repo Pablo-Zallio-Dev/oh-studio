@@ -64,14 +64,18 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
- position: fixed;
- position: fixed;
- z-index: 999;
- background: linear-gradient(180deg, rgba(255,255,255,1) 9%, rgba(0,212,255,0) 100%);
+  position: fixed;
+  position: fixed;
+  z-index: 999;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 9%,
+    rgba(0, 212, 255, 0) 100%
+  );
 }
 
 nav {
-  background-color: var(--color-grey-light);
+  background-color: var(--color-grey-light-dark);
   backdrop-filter: blur(16px);
   border-radius: 50%;
   width: 48px;
@@ -80,6 +84,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   top: 20px;
+  transition: background-color 0.8s ease-in-out;
+  
 }
 
 .nav__link {
@@ -154,7 +160,6 @@ nav {
   padding: 3rem 1.5rem;
   display: grid;
   gap: 1.25rem;
- 
 }
 
 .container__overview h4 {
@@ -338,7 +343,6 @@ nav {
 \******************/
 
 @media (1024px < width) {
-
   .footer {
     display: flex;
     flex-direction: row;
@@ -355,6 +359,10 @@ nav {
     align-items: center;
     gap: 1rem;
     font-size: var(--fz-14);
+  }
+
+  nav:hover {
+    background-color: #7f7e7e;
   }
 
   .paragraph p span a:hover {
